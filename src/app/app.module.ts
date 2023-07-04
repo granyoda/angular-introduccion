@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 //Modulos
 import { CounterModule } from './counter/counter.module';
 import { HeroesModule } from './heroes/heroes.module';
+import { DbzModule } from './dbz/dbz.module';
 
 //Componentes
 // import { CounterComponent } from './counter/counter.component';
@@ -16,15 +17,20 @@ import { HeroesModule } from './heroes/heroes.module';
 @NgModule({
   declarations: [
     AppComponent,
-    // CounterComponent,
-    // HeroComponent,
-    // ListComponent
+    /*
+    CounterComponent,
+    HeroComponent,
+    ListComponent
+    */
+
   ],
-  imports: [
+imports: [
     BrowserModule,
     // aqui colocan los modulos que de otras sessiones para que se puedan trabajar de manera global
     CounterModule,
     HeroesModule,
+    //seccion 2
+    DbzModule
   ],
   providers: [],
   bootstrap: [AppComponent]

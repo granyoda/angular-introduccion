@@ -1,0 +1,22 @@
+<h1>DBZ main page</h1>
+
+<hr>
+
+<h2>Personajes</h2>
+<div class="row">
+  <div class="col">
+    <!-- [] envia elementos, () recive elementos "llama a funciones" -->
+    <dbz-list [characterList]="characters"
+      (onDelete)="onDeleteCharacter($event)">
+    </dbz-list>
+
+  </div>
+
+  <div class="col">
+
+    <!-- recive elementos del hijo -->
+    <dbz-add-character (onNewCharacter)="onNewCharacter($event)" >
+    </dbz-add-character>
+
+  </div>
+</div>
