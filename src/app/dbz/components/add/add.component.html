@@ -2,7 +2,7 @@
 <form action="#" class="row" (ngSubmit)="emitCharacter()">
   <!-- Asociar un evento y un atributo (usando el metodo de la caja de las bananas "[()]") tambien conocido como 2 way data binding-->
   <!-- Recuerda importar el modulo de FormsModule en dbz.module.ts -->
-  <!-- tambien recuerda asignarle un NAME a casa etiqueta -->
+  <!-- tambien recuerda asignarle un NAME a casa etiqueta para que funciones ngModel-->
   <input type="text"
   [(ngModel)]="character.name"
   class="form-control mb-2"

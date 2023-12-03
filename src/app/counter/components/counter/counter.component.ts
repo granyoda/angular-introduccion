@@ -1,4 +1,4 @@
-// ? todo esto se puede hacer colocando a-component
+// ? todo esto se puede hacer colocando a-component cli
 
 import { Component, OnInit } from '@angular/core';
 

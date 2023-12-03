@@ -34,6 +34,8 @@ export class DbzService {
   addCharacter( character: Character): void{
     // agregar elemento al arreglo
 
+    //"...characcter" spret hace que se asignen los valores a la nueva variable, esto con la finalidad de no
+    // volver a colocar todos los valores (ahorar tiempo)
     const newCharacter: Character = { id: uuid(), ...character };
 
     this.characters.push(newCharacter);
@@ -49,6 +51,7 @@ export class DbzService {
   */
   deleteCharacterById(id: string):void{
     //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+    //filter regresa un nuevo arreglo con los valores que cumplan la condicion
     this.characters = this.characters.filter( character => character.id !== id );
     //console.log(this.characters);
   }

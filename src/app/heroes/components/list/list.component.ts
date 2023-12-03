@@ -12,6 +12,7 @@ export class ListComponent {
   constructor() { }
 
   removeLastHero(): void{
+    //pop regresa el valor eliminado (que sería el ultimo de la lista)
     this.deletedHero = this.heroNames.pop();
   }
 
